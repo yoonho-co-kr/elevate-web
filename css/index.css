@@ -1,0 +1,186 @@
+#header {
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#header .right .menu-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#header .right .menu-wrap .menu {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.level-wrap {
+    height: 100vh;
+    position: relative;
+}
+
+.footer-bg {
+    width: 100%;
+    aspect-ratio: 4/1;
+    max-height: 636px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.footer-bg.hide {
+    bottom: -100%;
+}
+
+.footer-bg.lvl1 {
+    background: url(../img/footer-lvl1.png) no-repeat center / cover;
+}
+
+.footer-bg.lvl2 {
+    background: url(../img/footer-lvl2.png) no-repeat center / cover;
+}
+
+.footer-bg.lvl3 {
+    background: url(../img/footer-lvl3.png) no-repeat center / cover;
+}
+
+.footer-bg.lvl4 {
+    background: url(../img/footer-lvl4.png) no-repeat center / cover;
+}
+
+.footer-bg.lvl5 {
+    background: url(../img/footer-lvl5.png) no-repeat center / cover;
+}
+
+.footer-bg.lvl6 {
+    background: url(../img/footer-lvl6.png) no-repeat center / cover;
+}
+
+.footer-bg.lvl7 {
+    background: url(../img/footer-lvl7.png) no-repeat center / cover;
+}
+
+#main-object {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.main-object-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.main-object-box .main,
+.main-object-box .sub {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    ;
+}
+
+.main-object-box .sub {
+    opacity: 0.8;
+    transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.main-object-box .main.hide,
+.main-object-box .sub.hide {
+    top: -200%;
+}
+
+
+.main-object-box.lvl1 .main {
+    background: url(../img/main-lvl1.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl2 .main {
+    background: url(../img/main-lvl2.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl3 .main {
+    background: url(../img/main-lvl3.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl4 .main {
+    background: url(../img/main-lvl4.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl5 .main {
+    background: url(../img/main-lvl5.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl6 .main {
+    background: url(../img/main-lvl6.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl7 .main {
+    background: url(../img/main-lvl7.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl1 .sub {
+    background: url(../img/sub-lvl1.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl2 .sub {
+    background: url(../img/sub-lvl2.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl3 .sub {
+    background: url(../img/sub-lvl3.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl4 .sub {
+    background: url(../img/sub-lvl4.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl5 .sub {
+    background: url(../img/sub-lvl5.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl6 .sub {
+    background: url(../img/sub-lvl6.png) no-repeat center / cover;
+    ;
+}
+
+.main-object-box.lvl7 .sub {
+    background: url(../img/sub-lvl7.png) no-repeat center / cover;
+    ;
+}
+
+
+@media screen and (max-width:768px) {
+    #main-object {
+        left: 60%;
+    }
+
+    .footer-bg {
+        aspect-ratio: 2/1;
+    }
+}
