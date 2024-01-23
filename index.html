@@ -10,6 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 </head>
 
@@ -27,13 +32,13 @@
         </div>
     </div>
     <div id="fullpage">
-        <div class="section level-wrap">Section 1</div>
-        <div class="section level-wrap">Section 2</div>
-        <div class="section level-wrap">Section 3</div>
-        <div class="section level-wrap">Section 4</div>
-        <div class="section level-wrap">Section 5</div>
-        <div class="section level-wrap">Section 6</div>
-        <div class="section level-wrap">Section 7</div>
+        <div class="section level-wrap"></div>
+        <div class="section level-wrap"></div>
+        <div class="section level-wrap"></div>
+        <div class="section level-wrap"></div>
+        <div class="section level-wrap"></div>
+        <div class="section level-wrap"></div>
+        <div class="section level-wrap"></div>
     </div>
     <div id="main-object">
         <div class="main-object-box lvl1">
@@ -65,6 +70,43 @@
             <div class="main hide"></div>
         </div>
     </div>
+    <div id="main-text">
+        <div class="main-text-box lvl1">
+            <div class="main hide">Azure Depths,<br>Journey Begins in the Sea</div>
+            <div class="sub hide">As the vast blue sea unfolds before you, walk along the coastline, feeling the
+                refreshing sea breeze.</div>
+        </div>
+        <div class="main-text-box lvl2">
+            <div class="main hide">Footprints on Earth,<br>Adventure on the Ground</div>
+            <div class="sub hide">Amidst the high buildings of the city and the beauty of nature on the horizon, embark
+                on a new adventure.</div>
+        </div>
+        <div class="main-text-box lvl3">
+            <div class="main hide">Lush Meadow,<br>Sanctuary in Nature</div>
+            <div class="sub hide">Rest beneath the blossoming flowers in the meadow, reminiscing about childhood
+                memories under the warmth of the sun.</div>
+        </div>
+        <div class="main-text-box lvl4">
+            <div class="main hide">Tower Peaks,<br>Beginning of the Challenge</div>
+            <div class="sub hide">Facing challenging heights in the mountain range, bravely move forward, conquering the
+                peaks.</div>
+        </div>
+        <div class="main-text-box lvl5">
+            <div class="main hide">Aerial Mystery,<br>Exploring the Atmosphere</div>
+            <div class="sub hide">Soar through the clouds, discovering the various wonders and beauty of the atmosphere.
+            </div>
+        </div>
+        <div class="main-text-box lvl6">
+            <div class="main hide">Endless Cosmos,<br>Journey through Starlight</div>
+            <div class="sub hide">Explore the infinite cosmos, journeying through starlight, encountering the smiles of
+                stars and the mysteries of planets.</div>
+        </div>
+        <div class="main-text-box lvl7">
+            <div class="main hide">Into Moonlight,<br>Final Adventure's End</div>
+            <div class="sub hide">Embrace the last moments in the moonlit space, savoring the end of the journey.
+                Experience the awe-inspiring beauty of the serene moon.</div>
+        </div>
+    </div>
     <div id="footer">
         <div class="footer-bg lvl1"></div>
         <div class="footer-bg lvl2"></div>
@@ -74,27 +116,6 @@
         <div class="footer-bg lvl6"></div>
         <div class="footer-bg lvl7"></div>
     </div>
-    <!-- <section class="level-wrap">
-        <div class="footer-bg lvl1"></div>
-    </section>
-    <section class="level-wrap">
-        <div class="footer-bg lvl2"></div>
-    </section>
-    <section class="level-wrap">
-        <div class="footer-bg lvl3"></div>
-    </section>
-    <section class="level-wrap">
-        <div class="footer-bg lvl4"></div>
-    </section>
-    <section class="level-wrap">
-        <div class="footer-bg lvl5"></div>
-    </section>
-    <section class="level-wrap">
-        <div class="footer-bg lvl6"></div>
-    </section>
-    <section class="level-wrap">
-        <div class="footer-bg lvl7"></div>
-    </section> -->
 
     <script>
         $(document).ready(function () {
@@ -113,7 +134,7 @@
                 fitToSectionDelay: 1000, // 섹션 넘어갈 때 걸리는 딜레이 시간
                 keyboardScrolling: true, // 키보드 방향키로 스크롤 컨트롤 여부
                 animateAnchor: true,
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'], // 섹션별 컬러
+                // sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'], // 섹션별 컬러
                 afterLoad: function (index, anchorLink) {
                     if (anchorLink === 1) {
                         pageObjectShown(1);
@@ -140,6 +161,10 @@
                 $(`.main-object-box.lvl${i} .main`).removeClass("hide");
                 $(".main-object-box .sub").addClass("hide");
                 $(`.main-object-box.lvl${i} .sub`).removeClass("hide");
+                $(".main-text-box .main").addClass("hide");
+                $(`.main-text-box.lvl${i} .main`).removeClass("hide");
+                $(".main-text-box .sub").addClass("hide");
+                $(`.main-text-box.lvl${i} .sub`).removeClass("hide");
                 console.log(`lvl${i} shown`)
             }
 
