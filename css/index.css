@@ -317,7 +317,7 @@
 
 #main-text .main-text-box .main.hide,
 #main-text .main-text-box .sub.hide {
-    top: -600px;
+    top: -1000px;
 }
 
 @media screen and (max-width:768px) {
